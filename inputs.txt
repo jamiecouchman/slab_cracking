@@ -1,12 +1,12 @@
 [model]
-dir = C:\Users\jamie.couchman\OneDrive - Arup\Python\Slab Cracking Example
-file = Typical Slab.gwb
-new_file = Typical Slab_cracked.gwb
+dir = %FOLDER DIRECTORY FOR MODEL%
+file = %FILE NAME% e.g Typical Slab.gwb
+new_file = %NAME TO OF FILE TO SAVE (CRACKED)% e.g. Typical Slab_cracked.gwb
 
 [inputs]
-governing_load_case = C7   
-M_cracking = 30
-max_iterations = 2     
-slab_elements_list_no = 10
-prop1 = 4 
-prop1_cracked = 5
+governing_load_case = %LOAD CASE/COMBINATION TO APPLY, ULS NORMALLY% e.g.C7   
+M_cracking = %CRACKING MOMENT FOR SECTION IN KNM, FIND USING ADSEC PLOT%
+max_iterations = %MAX NUMBER OF CRACKING ITERATIONS TO RUN%      
+slab_elements_list_no = %LIST NUMBER IN WHICH 2D SLAB ELEMENTS APPEAR (ONES YOU WANT TO CRACK)% 
+prop1 = %UNCRACKED 2D PROPERTY NUMBER%   
+prop1_cracked = %CRACKED 2D PROPERTY NUMBER%
